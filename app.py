@@ -19,7 +19,7 @@ async def home(request: Request):
 
 @app.post('/predict1',)
 async def prediction(requestVal:str):
-    # Pre-processing user input
+    # Pre-processing user input.
     print("-----",requestVal)
     requestVal = json.loads(requestVal)
     print(type(requestVal))

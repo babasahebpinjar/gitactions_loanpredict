@@ -25,4 +25,4 @@ def test_prediction():
     assert 'loan_approval_status' in result
     assert result['loan_approval_status'] in ['Approved', 'Rejected']
     print(response.content)
-    assert response.status_code == 200
+    assert response.status_code == 2001
