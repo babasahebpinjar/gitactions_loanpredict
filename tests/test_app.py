@@ -20,6 +20,7 @@ def test_prediction():
         "LoanAmount": 150
     }
 
+    # get response
     response = client.post("/predict1?requestVal=" + json.dumps(sample_input))
     result = response.json()
     assert 'loan_approval_status' in result
